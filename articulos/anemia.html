@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Anemia - Aprendizaje sobre términos médicos</title>
+    <style>
+        table, tr, th, td {
+            border: 1px solid black
+        } 
+    </style>
 </head>
 <body>
     <header>
@@ -29,7 +34,45 @@
             <section>
                 <h3 id="Descripcion">Descripción</h3>
                 <p>La anemia es un problema que se produce cuando no tienes suficientes glóbulos rojos sanos o hemoglobina para transportar oxígeno a los tejidos del cuerpo.</p> 
-                <img src="../imagenes/comparacion_anemia.png" alt="Comparativa sangre normal y sangre con anemia" width="480" height="320">
+                <p>Clasificación de los diferentes estadios de la deficiencia de hierro:</p>
+                <table>
+                    <tr>
+                        <th></th> <!--Encabezado de tabla (tabe head)-->
+                        <th scope="col">Hb</th> <!--Encabezado de columna-->
+                        <th scope="col">Ferritina ng/ml</th>
+                        <th scope="col">RsTf ng/L</th>
+                        <th scope="col">Transferrina mg/dl</th>
+                        <th scope="col">IST %</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">Ferropenia latente</th> <!--Encabezado de fila-->
+                        <td>Normal</td>  <!--Celda (tabe date)-->
+                        <td>&lt; 20</td>
+                        <td>&lt; 5</td>
+                        <td>360</td>
+                        <td>&gt; 15</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Déficit transporte hierro</th>
+                        <td>Normal</td>
+                        <td>&lt; 12</td>
+                        <td>&gt; 5</td>
+                        <td>&gt; 380</td>
+                        <td>&lt; 15</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Anemia ferropénica</th>
+                        <td>Descendido</td>
+                        <td>&lt; 12</td>
+                        <td>&gt; 5</td>
+                        <td>&gt; 380</td>
+                        <td>&lt; 15%</td>
+                    </tr>
+                </table>
+                <figure>
+                    <img src="../imagenes/comparacion_anemia.png" alt="Comparativa sangre normal y sangre con anemia" width="480" height="320">
+                    <figcaption>Comparativa sangre normal y sangre con anemia</figcaption>
+                </figure>
             </section>
             <section>
                 <h3 id="Causas">Causas</h3>
