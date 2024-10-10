@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Contacto - Aprendizaje sobre términos médicos</title>
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <a href="../../index.html">
+            <img src="../../imagenes/logo.jpg" alt="Página de inicio" width="200" height="200">
+        </a>
+        <h1>Aprendizaje sobre términos médicos</h1>
+        <p>Búsqueda de artículos sobre diversas condiciones y patologías organizadas alfabéticamente.</p>
+    </header>
+    <main>
+        <p>Estás en: <a href="../../index.html">Página de inicio</a> > <a href="f_contacto.html">Formulario de Contacto</a></p>
+        <form action="resp_contacto.html" method="get">
+            <h2>Formulario de Contacto</h2>
+            <p>Los campos obligatorios están indicados con un asterisco.</p>
+            <p><label for="as">Asunto:</label>
+                <input type="text" id="as" required>
+                <strong>*</strong>
+            </p>
+            <p><label for="com">Comentario o pregunta:</label>
+                <textarea id="com" required></textarea>
+                <strong>*</strong>
+            </p>
+            <p><label for="yo">Yo soy:</label>
+                <select id="yo">
+                    <option value="pac">Paciente</option>
+                    <option value="ciencia">Científico</option>
+                    <option value="med">Médico</option>
+                    <option value="educ">Educador</option>
+                    <option value="fab">Fabricante</option>
+                    <option value="period">Periodista</option>
+                </select>
+            </p>
+            <p><label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" id="fecha">
+            </p>
+            <fieldset>
+                <legend>Sexo:</legend>
+                <input type="radio" id="M" name="sexo" value="Masculino">
+                <label for="M">Masculino</label><br>
+                <input type="radio" id="F" name="sexo" value="Femenino">
+                <label for="F">Femenino</label><br>
+                <input type="radio" id="O" name="sexo" value="Otro">
+                <label for="O">Otro</label><br>
+            </fieldset>
+            <p><label for="email">Correo electrónico:</label>
+                <input type="email" id="email">
+            </p>
+            <p><label for="info">Deseo recibir más información:</label>
+                <input type="checkbox" id="info" name="info">
+            </p>
+            <p><input type="submit" value="Enviar consulta" style="width:120px; height:40px"></p>
+        </form>
+    </main>
+    <nav>
+        <h2>Opciones de navegación:</h2>
+        <ul>
+            <li><a href="../../index.html">Página de Inicio</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <p>Autor: Maria Martinez Pascual</p>
+        <p>&copy; 2024 Aprendizaje sobre términos médicos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
