@@ -1,0 +1,296 @@
+header {
+    background-color: #358237; /* Fondo verde */
+    color: white; /* Texto blanco */
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    font-family: Verdana, sans-serif, 'Times New Roman';
+}
+
+body {
+    font-family: 'Verdana', sans-serif, 'Times New Roman';
+    color: #333; /* Texto gris oscuro */
+    margin: 0;
+    padding: 0;
+    background-color: #fcf7f7; /* Fondo gris claro */
+}
+
+h1, h2, h3, h4 {
+    color: #152536; /* Color azul oscuro */
+    margin: 20px;
+    margin-left: 15px;
+}
+
+/* Estilo para todos los enlaces */
+a {
+    color: #247b26; /* Color verde para todos los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Poner enlaces en negrita */
+}
+
+/* Cambiar color al pasar el cursor */
+a:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+    color: #333; /* Cambiar a gris oscuro */
+}
+
+a:focus, button:focus {
+    outline: 3px solid #247b26; /* Un borde verde visible alrededor del enlace o botón */
+}
+
+p {
+    margin: 15px;
+    line-height: 1.6;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.articulo {
+    background-color: #ffef96; /* Fondo amarillo suave */
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.navOps {
+    background-color: #f3eeee; /* Fondo gris claro */
+    border: 1px solid #ccc; /* Borde gris */
+    padding: 15px; /* Espaciado interno */
+    margin: 20px; /* Espaciado entre elementos */
+    list-style-type: none; /* Quitar los puntos de las listas */
+}
+
+.navOps li {
+    margin: 10px 0; /* Separación entre elementos de la lista */
+}
+
+.temasDestacados {
+    background-color: #f9f9f9; /* Fondo gris claro */
+    border: 2px solid #4CAF50; /* Borde verde */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px; /* Espacio entre artículos */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.temasDestacados h3 {
+    font-size: 1.5em; /* Tamaño más grande para los títulos */
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+.temasDestacados p {
+    color: #555; /* Color gris oscuro para el texto */
+}
+
+.margen {
+    margin-left: 40px;
+}
+
+
+.saltar {
+    position: absolute; /* Posicionamos fuera del flujo del documento */
+    top: -40px; /* Inicialmente fuera de la pantalla */
+    left: 10px; /* Cerca del borde izquierdo */
+    background-color: #757474; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    padding: 10px; /* Espaciado */
+    z-index: 100; /* Asegura que quede por encima de otros elementos */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.saltar:focus {
+    top: 10px; /* Aparece en la parte superior de la página cuando recibe el foco */
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column; /* Alinear los elementos verticalmente */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espacio entre grupos de formulario */
+}
+
+label {
+    margin-bottom: 5px; /* Espacio entre el label y el input */
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Hacer que el input ocupe todo el ancho disponible */
+}
+
+button, input[type="submit"] {
+    background-color: #247b26;
+    color: white;
+    padding: 1px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit; /* Heredar fuente del body */
+    font-size: inherit; /* Heredar tamaño de fuente del body */
+    line-height: normal; /* Asegurar altura de línea normal */
+    min-width: 180px;
+    width: auto;
+    text-align: center;
+    display: inline-block; /* Hacer que el botón se comporte como un bloque en línea */
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #45a049; /* Cambiar el color al pasar el ratón */
+}
+
+.map-sitio {
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.map-sitio ul {
+    padding: 0; /* Quitar padding */
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los enlaces se ajusten en varias líneas si es necesario */
+}
+
+.map-sitio li {
+    flex: 1 1 200px; /* Permitir que cada enlace ocupe al menos 200px de ancho */
+    margin-bottom: 10px; /* Espacio entre elementos de la lista */
+}
+
+.map-sitio a {
+    display: block; /* Hacer que cada enlace ocupe su propia línea completa */
+}
+
+@media (max-width: 768px) {
+    /* Estilos para pantallas pequeñas (móviles) */
+    header, footer, main {
+        padding: 10px;
+    }
+    
+    nav ul {
+        display: block;
+        text-align: left;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block; /* Convertir todos los elementos de la tabla en bloques */
+    }
+
+    /* Ocultar encabezados de la tabla en móviles */
+    thead {
+        display: none;
+    }
+
+    /* Cada fila de la tabla se convierte en un bloque individual */
+    tr {
+        margin-bottom: 10px; /* Espaciado entre filas */
+        border-bottom: 1px solid #ccc;
+    }
+
+    td {
+        display: block;
+        text-align: right;
+        padding-left: 50%; /* Desplazar el contenido hacia la derecha */
+        position: relative;
+    }
+
+    /* Mostrar los títulos de las columnas (etiquetas) para cada celda usando data-label */
+    td::before {
+        content: attr(data-label); /* Mostrar el encabezado como etiqueta */
+        position: absolute;
+        left: 10px; /* Posicionar el título en el lado izquierdo */
+        width: 45%; /* Asignar ancho para la etiqueta */
+        white-space: nowrap; /* Evitar que se rompa en varias líneas */
+        font-weight: bold; /* Negrita para las etiquetas */
+        text-align: left; /* Alinear el texto de la etiqueta a la izquierda */
+    }
+    
+    td:last-child {
+        border-bottom: 0; /* Quitar el borde inferior de la última celda */
+    }
+
+
+    img {
+        width: 100%; /* Imágenes ajustadas al ancho de la pantalla */
+        height: auto;
+    }
+
+    /* Asegurar que los artículos destacados también se adapten bien */
+    .temasDestacados {
+        padding: 15px;
+        font-size: 1em; /* Reducir ligeramente el tamaño de fuente en pantallas pequeñas */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Estilos para pantallas medianas (tabletas) */
+    header, footer {
+        padding: 20px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .temasDestacados {
+        padding: 20px;
+        font-size: 1.1em;
+    }
+
+    table {
+        width: 100%;
+    }
+    
+    th, td {
+        padding: 8px;
+        font-size: 0.9em; /* Reducir ligeramente el tamaño del texto */
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Estilos para pantallas grandes (escritorios) */
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main {
+        padding: 40px;
+    }
+
+    table {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .temasDestacados {
+        padding: 25px;
+        font-size: 1.2em; /* Mayor tamaño de fuente en pantallas grandes */
+    }
+}
+

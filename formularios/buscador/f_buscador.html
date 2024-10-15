@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Buscador - Aprendizaje sobre términos médicos</title>
+    <link type="css" rel="stylesheet" href="../../estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <a href="#contenido" class="saltar">Saltar al contenido principal</a>
+    <!-- Cabecera -->
+    <header>
+        <a href="../../index.html">
+            <img src="../../imagenes/logo.jpg" alt="Página de inicio" width="200" height="200">
+        </a>
+        <h1>Aprendizaje sobre términos médicos</h1>
+        <p>Búsqueda de artículos sobre diversas condiciones y patologías organizadas alfabéticamente.</p>
+    </header>
+    <main id="contenido">
+        <p>Estás en: <a href="../../index.html">Página de inicio</a> > <a href="f_buscador.html">Buscador de artículos</a></p>
+        <form class="formulario" action="resp_buscador.html" method="get">
+            <h2>Buscador de artículos</h2>
+            <p>Búsqueda de artículos de la enciclopedia según los diferentes campos que los componen.</p>
+            <p>Es posible buscar por solo uno de los campos o combinarlos.</p>
+            <p>No hay campos obligatorios, pero conviene rellenar al menos uno para obtener una búsqueda específica.</p>
+            <p class="form-group"><label for="descripcion">Descripción:</label>
+                <input type="text" id="descripcion" name="descripcion">
+            </p>
+            <p class="form-group"><label for="causas">Causas:</label>
+                <input type="text" id="causas" name="causas">
+            </p>
+            <p class="form-group"><label for="sintomas">Síntomas:</label>
+                <input type="text" id="sintomas" name="sintomas">
+            </p>
+            <p class="form-group"><label for="pruebas">Pruebas y exámenes:</label>
+                <input type="text" id="pruebas" name="pruebas">
+            </p>
+            <p class="form-group"><label for="tratamiento">Tratamiento:</label>
+                <input type="text" id="tratamiento" name="tratamiento">
+            </p>
+            <p class="form-group"><label for="expectativas">Expectativas:</label>
+                <input type="text" id="expectativas" name="expectativas">
+            </p>
+            <p class="form-group"><input type="submit" value="Buscar" style="width:120px; height:40px"></p> 
+        </form>
+    </main>
+    <nav>
+        <h2>Opciones de navegación:</h2>
+        <ul class="navOps">
+            <li><a href="../../index.html"><i class="fas fa-home" aria-hidden="true"></i>Página de Inicio</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <p>Autor: Maria Martinez Pascual</p>
+        <p>&copy; 2024 Aprendizaje sobre términos médicos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
