@@ -1,0 +1,77 @@
+@import url('estilos.css');
+:root {
+    --fondo: #000;
+    --enlaces: #e6e7e7;
+    --henlaces: #ffce09;
+    --texto: #f1f1f1;
+    --hoverboton: rgb(66, 64, 64);
+}
+
+body, header {
+    filter: invert(1) hue-rotate(180deg); /* Invertir los colores y ajustar tonos */
+    background-color: var(--fondo); /* Fondo oscuro */
+}
+  /* Excluir la imagen del logo de la inversión */
+header img {
+    filter: invert(1); /* Revertir inversión del logo */
+}
+
+/* Enlaces con colores ajustados manualmente */
+a {
+    filter: invert(1);
+    color: var(--enlaces); /* Color turquesa claro para enlaces en modo oscuro */
+    text-decoration: none;
+}
+
+a:hover {
+    filter: invert(1);
+    color: var(--henlaces); /* Un color amarillo brillante al pasar el ratón */
+    text-decoration: underline;
+}
+
+h1 {
+    color: var(--texto);
+}
+
+h2, h3, h4 {
+    filter: invert(1);
+    color: var(--texto); /* Color blanco para títulos */
+}
+
+.temasDestacados {
+    filter: invert(1);
+    background-color: var(--fondo); /* Color de fondo interno */
+    border: 2px solid var(--enlaces); /* Cambiar el color del borde a rosa (por ejemplo) */
+}
+.temasDestacados p {
+    filter: invert(1);
+}
+.temasDestacados h3 {
+    filter: invert(1);
+    color: var(--fondo);
+}
+
+/* Excluir imágenes, videos e íconos */
+img, video, svg {
+    filter: invert(1) hue-rotate(180deg); /* Revertir el efecto de inversión */
+}
+
+button, input[type="button"] {
+    background-color: var(--texto);
+    color: var(--fondo);           
+    cursor: pointer;        /* Cambia el cursor al pasar sobre el botón */
+}
+
+button:hover {
+    background-color: darkgray;
+}
+
+input[type="submit"] {
+    background-color: var(--fondo);
+    color: var(--texto);           
+    cursor: pointer;        /* Cambia el cursor al pasar sobre el botón */
+}
+
+input[type="submit"]:hover {
+    background-color: var(--hoverboton);
+}

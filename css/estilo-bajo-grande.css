@@ -1,0 +1,17 @@
+@import url('estilo-bajo-contraste.css');
+
+body{
+    font-size: 2em;
+}
+
+.map-sitio {
+    width: 100%;
+}
+
+.map-sitio li {
+    margin: 15px;
+}
+
+#map-sitio-largo {
+    display:inline-block;
+}

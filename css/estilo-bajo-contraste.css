@@ -1,0 +1,85 @@
+@import url('estilos.css');
+
+:root {
+    --hfondo: #ffe3ea; /* fondo rosa claro */
+    --enlaces: #f8e89d; /* amarillo claro */
+    --titulos: #e1e1e1; /* gris claro */
+    --body: #d5d5d5; /* gris medio */
+    --texto-temas: #eeeded; /* gris claro */
+    --texto-header: #f2f2f2; /* gris muy claro */
+    --fondo: #fff5f5; /* fondo blanco muy suave */
+    --fondo-art: #fdf3e7; /* amarillo muy claro */
+    --fondo-temas: #f9f9f9; /* gris claro azulado */
+    --fondo-nav: #f8f8f8; /* gris muy claro */
+    --fondo-saltar: #f0eae3; /* gris suave */
+    --fondo-boton-resaltado: #f6e7d9; /* amarillo suave */
+    --borde-boton: #ddd; /* gris suave */
+}
+
+
+header {
+    background-color: var(--hfondo); 
+    color: var(--texto-header);
+    border-bottom: 2px solid var(--borde-boton);
+}
+
+body {
+    color: var(--body); 
+    background-color: var(--fondo); 
+}
+
+h1, h2, h3, h4 {
+    color: var(--titulos); 
+}
+
+a {
+    color: var(--enlaces); /* Color amarillo claro para todos los enlaces */
+}
+
+a:hover {
+    color: var(--body); 
+}
+
+a:focus, button:focus {
+    outline: 3px solid var(--enlaces); 
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid var(--borde-boton);
+}
+
+.articulo {
+    background-color: var(--fondo-art); 
+    border: 1px solid var(--borde-boton);
+}
+
+.navOps {
+    background-color: var(--fondo-nav); 
+    border: 1px solid var(--borde-boton); 
+}
+
+
+.temasDestacados {
+    background-color: var(--fondo-temas);
+    border: 2px solid var(--enlaces); 
+}
+
+.temasDestacados p {
+    color: var(--texto-temas); 
+}
+
+button, input[type="submit"] {
+    background-color: var(--enlaces);
+    color: var(--texto-header);
+}
+   
+
+button:hover, input[type="submit"]:hover {
+    background-color: var(--fondo-boton-resaltado); 
+}
+
+footer {
+    background-color: var(--footer-fondo); /* Fondo gris claro */
+    color: var(--footer-texto); /* Texto gris claro */
+}

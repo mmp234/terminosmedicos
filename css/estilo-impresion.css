@@ -1,0 +1,133 @@
+@import url('estilos.css');
+:root {
+    --fondo: white;
+    --texto: black;
+    --enlaces: gray;
+}
+
+@media print {
+    /* Tamaño y márgenes de la página */
+    @page {
+        size: A4;
+        margin: 2cm;
+    }
+
+    /* Cambiar colores a negro sobre fondo blanco */
+    body {
+        background-color: var(--fondo);
+        color: var(--texto);
+        font-size: 12pt; /* Tamaño mínimo de 12pt */
+    }
+
+    /* Cambiar la fuente a serif para mejor legibilidad en papel */
+    body, p, h1, h2, h3, h4 {
+        font-family: serif, 'Times New Roman', Times;
+    }
+
+    /* Enlaces: Subrayar y mostrar URL */
+    a {
+        color: var(--texto);
+        text-decoration: underline;
+    }
+
+    #migas-pan {
+        display:none;
+    }
+
+    /* Mostrar la URL después del enlace */
+    a::after {
+        content: " (" attr(href) ")";
+        font-size: 10pt;
+        color: var(--enlaces);
+    }
+
+    figcaption::after {
+        content: " (" attr(data-src) ")";
+        font-size: 10pt;
+        color: var(--enlaces);
+      }
+
+    /* Ocultar elementos no esenciales */
+    footer, nav:not(#necesario), .saltar, .formulario, .navOps, map, iframe {
+        display: none;
+    }
+
+    /* Eliminar imágenes decorativas, mantener las relevantes */
+    img {
+        display: none;
+    }
+
+    /* Permitir impresión de imágenes si son esenciales para el contenido */
+    #img-importante {
+        display: block;
+        width: 8cm;
+    }
+
+    #logo {
+        display:block;
+        width:2cm;
+        filter: grayscale(100%);
+    }
+
+    #necesario {
+        display: block !important;
+        color: var(--texto);
+    }
+
+    #caption {
+        display: none;
+    }
+
+    /* Ajustar tablas */
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 11pt;
+        margin: 1cm auto;
+        table-layout: fixed;
+    }
+
+    thead {
+        display: table-header-group; /* Asegura que los encabezados se repitan en cada página */
+    }
+
+    th, td {
+        border: 1px solid var(--texto);
+        padding: 0.5cm;
+        text-align: left;
+    }
+
+    /* Evitar cortes en mitad de las tablas */
+
+
+    /* Ajustar márgenes de párrafos */
+    p {
+        margin: 10px 0;
+        margin-bottom:0.3cm;
+    }
+    section {
+        margin-top: 0.5cm; 
+        margin-bottom: 1cm; 
+        page-break-inside: avoid;
+      }
+
+    .temasDestacados {
+        margin: 0; /* Quitar el margen para centrar o ajustar la alineación */
+        padding: 10px; /* Reducir el padding */
+        border: none; /* Opcional: quitar el borde en impresión */
+    }
+    /* Eliminar interacciones y elementos dinámicos */
+    button, input, textarea, select, .dynamic {
+        display: none;
+    }
+
+    /* Mostrar copyright al final de la página */
+    body::after {
+        content: "Copyright © 2024 Aprendizaje sobre términos médicos";
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 10pt;
+        color: var(--enlaces);
+    }
+}

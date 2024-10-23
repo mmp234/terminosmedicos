@@ -1,0 +1,22 @@
+@import url('estilos.css');
+
+body{
+    font-size: 2em;
+}
+
+.map-sitio {
+    width: 100%;
+}
+
+.map-sitio li {
+    margin: 15px;
+}
+
+#map-sitio-largo {
+    display:inline-block;
+}
+
+button, input[type="submit"] {
+    width: 300px;       
+    height: 50px;   
+}
