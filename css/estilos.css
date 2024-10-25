@@ -116,7 +116,7 @@ th, td {
 
 .saltar {
     position: absolute; /* Posicionamos fuera del flujo del documento */
-    top: -999px; /* Inicialmente fuera de la pantalla */
+    top: -9999px; /* Inicialmente fuera de la pantalla */
     left: 10px; /* Cerca del borde izquierdo */
     background-color: var(--fondo-saltar);
     color: var(--texto-header);
