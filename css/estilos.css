@@ -190,6 +190,10 @@ button:hover, input[type="submit"]:hover {
     display: block; /* Hacer que cada enlace ocupe su propia línea completa */
 }
 
+.amara-embed {
+    width: 560px;
+    height: 315px;
+}
 
 @media (max-width: 768px) {
     /* Estilos para pantallas pequeñas (móviles) */
