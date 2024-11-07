@@ -190,7 +190,7 @@ button:hover, input[type="submit"]:hover {
     display: block; /* Hacer que cada enlace ocupe su propia línea completa */
 }
 
-.amara-embed {
+.amara-embed iframe {
     width: 560px;
     height: 315px;
 }
