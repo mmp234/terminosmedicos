@@ -199,6 +199,21 @@ button:hover, input[type="submit"]:hover {
     overflow: hidden;
 }
 
+/* Estilos generales */
+#blog {
+    width: 90%;
+    margin: 20px auto; 
+    border: 1px solid var(--borde-boton); 
+    padding: 10px;
+  }
+  
+  /* Estilos del iframe */
+  #blog iframe {
+    width: 100%; 
+    min-height: 600px; 
+    display: block;
+  }
+
 @media (max-width: 768px) {
     /* Estilos para pantallas pequeñas (móviles) */
     header, footer, main {
