@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lector de pantalla NO Accesible - Aprendizaje sobre términos médicos</title>
+    <link rel="stylesheet" href="../css/estilos.css" title="Tema principal" type="text/css" media="screen">
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <img src="../imagenes/logo.jpg" id="logo" alt="Página de inicio" width="200" height="200">
+        </a>
+        <h1>Aprendizaje sobre términos médicos</h1>
+        <p>Búsqueda de artículos sobre diversas condiciones y patologías organizadas alfabéticamente.</p>
+    </header>
+    <main>
+        <p style="font-size:35px;"><strong>Diabetes</strong></p>
+        <section class="articulo">
+            <p style="font-size:25px;"><strong>Definición</strong></p>
+            <p>La diabetes, también conocida como DM, es una enfermedad en la que los niveles de glucosa (o azúcar) en sangre son demasiado altos. La glucosa es la principal fuente de energía del cuerpo. Su cuerpo puede producir glucosa, pero también proviene de los alimentos que consume.</p> 
+            <img src="../imagenes/niveles-glucosa.jpg" width="500" height="350">
+        </section>
+        <section class="articulo">
+            <p style="font-size:25px;"><strong>Tipos</strong></p>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; · Diabetes tipo 1 <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; · Diabetes tipo 2 <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; · Diabetes gestacional <br>
+            </p>
+        </section>
+        <section class="articulo">
+            <p style="font-size:25px;"><strong>Clasificación</strong></p>
+            <p>Valores de referencia para la clasificación de la diabetes:</p>
+            <table>
+                <tr>
+                    <td></td>
+                    <td><strong>Normal</strong></td> 
+                    <td><strong>Pre Diabetes</strong></td>
+                    <td><strong>Diabetes</strong>></td>
+                </tr>
+                <tr>
+                    <td><strong>Glucosa en ayunas</strong></td> 
+                    <td>70-100</td> 
+                    <td>100-125</td>
+                    <td>>=126</td>
+                </tr>
+                <tr>
+                    <td><strong>Glucosa 2h después de consumir 75 gramos de glucosa</strong></td> 
+                    <td>&lt; 140</td> 
+                    <td>140-200</td>
+                    <td>>= 200</td>
+                </tr>
+                <tr>
+                    <td><strong>Glucosa en cualquier momento del día con síntomas</strong></td> 
+                    <td>>= 200</td> 
+                    <td>>= 200</td>
+                    <td>>= 200</td>
+                </tr>
+                <tr>
+                    <td><strong>Hemoglobina glicosilada</strong></td> 
+                    <td>&lt;= 5.7</td> 
+                    <td>5.7-6.4</td>
+                    <td>>= 6.5</td>
+                </tr>
+            </table>
+        </section>
+        <section class="articulo">
+            <form class="formulario" action="" method="get">
+                <p style="font-size:25px;"><strong>Formulario de diagnóstico de diabetes</strong></p>
+                <p class="form-group">Nombre y Apellidos:
+                    <input type="text" required>
+                </p>
+                <p class="form-group">Código postal:</label>
+                    <input type="text" pattern="[0-9]{5}">
+                </p>
+                <p class="form-group">Fecha donde apareció una llaga presente sin sanar:
+                    <input type="date" required>
+                </p>
+                <p class="form-group">Color de la orina:
+                    <input type="color" name="color" id="color">
+                </p>
+                <p class="form-group">Nivel de visión borrosa:
+                    <input type="range" min="0" max="10" value="5">
+                </p>
+                <p class="form-group">Comentarios:
+                    <textarea></textarea>
+                </p>
+                <p class="form-group">Correo electrónico:
+                    <input type="email">
+                </p>
+                <p class="form-group"><input type="submit" value="Diagnosticar"></p>
+            </form>
+        </section>
+    </main>
+    <nav>
+        <h2>Opciones de navegación:</h2>
+        <ul class="navOps">
+            <li><a href="../index.html"><i class="fas fa-home" aria-hidden="true"></i>Página de Inicio</a></li>
+            <li><a href="../letras/letra-d.html">&#9658; Página de Letra D</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <p>Autor: Maria Martinez Pascual</p>
+        <p>&copy; 2024 Aprendizaje sobre términos médicos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

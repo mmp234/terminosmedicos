@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lector de pantalla Accesible - Aprendizaje sobre términos médicos</title>
+    <link rel="stylesheet" href="../css/estilos.css" title="Tema principal" type="text/css" media="screen">
+</head>
+<body>
+    <a href="#contenido" class="saltar">Saltar al contenido principal</a>
+    <header>
+        <a href="../index.html">
+            <img src="../imagenes/logo.jpg" id="logo" alt="Página de inicio" width="200" height="200">
+        </a>
+        <h1>Aprendizaje sobre términos médicos</h1>
+        <p>Búsqueda de artículos sobre diversas condiciones y patologías organizadas alfabéticamente.</p>
+    </header>
+    <main>
+        <h2>Diabetes</h2>
+        <ul>
+            <li><a href="#def">Definición</a></li>
+            <li><a href="#tip">Tipos</a></li>
+            <li><a href="#clas">Clasificación</a></li>
+            <li><a href="#fd">Formulario de diagnóstico de diabetes</a></li>
+        </ul>
+        <section class="articulo">
+            <h3 id="def">Definición</h3>
+            <p>La diabetes, también conocida como <abbr title="diabetes mellitus" lang="es">DM</abbr>, es una enfermedad en la que los niveles de glucosa (o azúcar) en sangre son demasiado altos. La glucosa es la principal fuente de energía del cuerpo. Su cuerpo puede producir glucosa, pero también proviene de los alimentos que consume.</p>
+            <img src="../imagenes/niveles-glucosa.jpg" alt="Niveles de glucosa en sangre" width="500" height="350">
+        </section>
+        <section class="articulo">
+            <h3 id="tip">Tipos</h3>
+            <ul>
+                <li>Diabetes tipo 1</li>
+                <li>Diabetes tipo 2</li>
+                <li>Diabetes gestacional</li>
+            </ul>
+        </section>
+        <section class="articulo">
+            <h3 id="clas">Clasificación</h3>
+            <table>
+                <caption>Valores de referencia para la clasificación de la diabetes:</caption>
+                <tr>
+                    <td></td>
+                    <th scope="col">Normal</th> 
+                    <th scope="col">Pre Diabetes</th>
+                    <th scope="col">Diabetes</th>
+                </tr>
+                <tr>
+                    <th scope="row">Glucosa en ayunas</th> 
+                    <td data-label="Normal">70-100</td> 
+                    <td data-label="Pre Diabetes">100-125</td>
+                    <td data-label="Diabetes">>=126</td>
+                </tr>
+                <tr>
+                <th scope="row">Glucosa 2h después de consumir 75 gramos de glucosa</th> 
+                    <td data-label="Normal">&lt; 140</td> 
+                    <td data-label="Pre Diabetes">140-200</td>
+                    <td data-label="Diabetes">>= 200</td>
+                </tr>
+                <tr>
+                    <th scope="row">Glucosa en cualquier momento del día con síntomas</th> 
+                    <td data-label="Normal">>= 200</td> 
+                    <td data-label="Pre Diabetes">>= 200</td>
+                    <td data-label="Diabetes">>= 200</td>
+                </tr>
+                <tr>
+                    <th scope="row">Hemoglobina glicosilada</th> 
+                    <td data-label="Normal">&lt;= 5.7</td> 
+                    <td data-label="Pre Diabetes">5.7-6.4</td>
+                    <td data-label="Diabetes">>= 6.5</td>
+                </tr>
+            </table>
+        </section>
+        <section class="articulo">
+            <form class="formulario" action="" method="get">
+                <h3 id="fd">Formulario de diagnóstico de diabetes</h3>
+                <p >Los campos obligatorios están indicados con un asterisco *.</p>
+                <p class="form-group"><label for="n">Nombre y Apellidos: <strong>*</strong></label>
+                    <input type="text" name="n" id="n" required>
+                </p>
+                <p class="form-group"><label for="cod">Código postal:</label>
+                    <input type="text" placeholder="Escriba un número de 5 cifras." name="cod" id="cod" pattern="[0-9]{5}">
+                </p>
+                <p class="form-group"><label for="fecha">Fecha donde apareció una llaga presente sin sanar:<strong>*</strong></label>
+                    <input type="date" name="fecha" id="fecha" required>
+                </p>
+                <p class="form-group"><label for="color">Color de la orina</label>
+                    <input type="color" name="color" id="color">
+                </p>
+                <p class="form-group"><label for="vis">Nivel de visión borrosa:</label>
+                    <input type="range" min="0" max="10" value="5" step="1" name="vis" id="vis">
+                </p>
+                <p class="form-group"><label for="com">Comentarios:</label>
+                    <textarea id="com"></textarea>
+                </p>
+                <p class="form-group"><label for="email">Correo electrónico:</label>
+                    <input type="email" id="email">
+                </p>
+                <p class="form-group"><input type="submit" value="Diagnosticar"></p>
+            </form>
+        </section>
+    </main>
+    <nav>
+        <h2>Opciones de navegación:</h2>
+        <ul class="navOps">
+            <li><a href="../index.html"><i class="fas fa-home" aria-hidden="true"></i>Página de Inicio</a></li>
+            <li><a href="../letras/letra-d.html">&#9658; Página de Letra D</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <p>Autor: Maria Martinez Pascual</p>
+        <p>&copy; 2024 Aprendizaje sobre términos médicos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
